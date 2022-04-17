@@ -4,20 +4,20 @@ LANG: JAVA
 TASK: gift1
 */
 
-import java.io.*
-import java.util.*
+import java.io.*;
+import java.util.*;
 
 class gift1 {
-    private ArrayList<Integer> currentMoney;
-    private ArrayList<Integer> currentMembers;
-    public static void main(String[] args) {
+
+    public static void main(String[] args) throws IOException {
+        ArrayList<Integer> currentMoney;
+        ArrayList<String> currentMembers;
         BufferedReader f = new BufferedReader(new FileReader("gift1.in"));
         PrintWriter out = new PrintWriter(new BufferedWriter(new FileWriter("ride.out")));
         StringTokenizer st = new StringTokenizer(f.readLine());
         int numGroupMembers = Integer.parseInt(st.nextToken());
         ArrayList<String> members = new ArrayList<String>();
-        StringTokenizer st;
-        for(int i = 0; i < members; i++) {
+        for(int i = 0; i < members.size(); i++) {
             st = new StringTokenizer(f.readLine());
             members.add(st.nextToken());
         }
